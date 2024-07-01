@@ -3,20 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Shipment Plan</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My GitHub Pages Site</h1>
-    </header>
-    <main>
-        <p>This is a simple webpage hosted on GitHub Pages.</p>
-        <button id="alertButton">Click Me</button>
-    </main>
-    <footer>
-        <p>&copy; 2024 My GitHub Pages Site</p>
-    </footer>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li>首页</li>
+                <li>发货计划</li>
+                <li>FBA合</li>
+                <li>采购</li>
+                <li>仓库</li>
+                <li>物流</li>
+                <li>售后</li>
+                <li>客户</li>
+                <li>广告</li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <header>
+                <div class="tabs">
+                    <button>全部</button>
+                    <button class="active">待审批</button>
+                    <button>待处理</button>
+                    <button>已处理</button>
+                    <button>已取消</button>
+                </div>
+                <div class="filter-bar">
+                    <button>添加发货计划</button>
+                    <div class="filters">
+                        <select>
+                            <option>全部国家</option>
+                        </select>
+                        <select>
+                            <option>全部店铺</option>
+                        </select>
+                        <select>
+                            <option>发货仓库</option>
+                        </select>
+                        <select>
+                            <option>运输方式</option>
+                        </select>
+                        <select>
+                            <option>物流商</option>
+                        </select>
+                        <select>
+                            <option>物流渠道</option>
+                        </select>
+                        <input type="date" value="2024-07-02">
+                        <select>
+                            <option>创建批次号</option>
+                        </select>
+                    </div>
+                    <button>筛选</button>
+                </div>
+            </header>
+            <table>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>计划编号</th>
+                        <th>图片</th>
+                        <th>店铺</th>
+                        <th>品名/SKU</th>
+                        <th>总毛重(kg)</th>
+                        <th>物流渠道</th>
+                        <th>计划发货量</th>
+                        <th>审批人</th>
+                        <th>建议发货量</th>
+                        <th>国家</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>RP240701001</td>
+                        <td><img src="candle.jpg" alt="Candle Extinguisher"></td>
+                        <td>amazon-US</td>
+                        <td>Candle Extinguisher with Long Handle L4965b</td>
+                        <td>2.16</td>
+                        <td>海运快递-以星普船</td>
+                        <td>40</td>
+                        <td>陈碧馨</td>
+                        <td>-</td>
+                        <td>美国</td>
+                        <td>详情 操作</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>RP240701002</td>
+                        <td><img src="lighter.jpg" alt="Blue Flame Jet Lighter"></td>
+                        <td>amazon-US</td>
+                        <td>HONESTStrightBlueFlameJetLighter L5327go</td>
+                        <td>2.76</td>
+                        <td>海运快递-以星普船</td>
+                        <td>40</td>
+                        <td>陈碧馨</td>
+                        <td>-</td>
+                        <td>美国</td>
+                        <td>详情 操作</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>RP240701003</td>
+                        <td><img src="torch.jpg" alt="Torch Lighter"></td>
+                        <td>amazon-US</td>
+                        <td>Pen Shape Torch Lighter, Windproof L5327lot2bg</td>
+                        <td>7.15</td>
+                        <td>海运快递-以星普船</td>
+                        <td>55</td>
+                        <td>陈碧馨</td>
+                        <td>-</td>
+                        <td>美国</td>
+                        <td>详情 操作</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
     <script src="script.js"></script>
 </body>
+</html>
+
 </html>
